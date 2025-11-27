@@ -1,0 +1,46 @@
+.weather-app {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.content-wrapper {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limit content width on large screens */
+  margin: 0 auto;
+}
+
+.weather-app h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+
+
+.loading {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.error {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid #ff6b6b;
+}
+

@@ -1,0 +1,153 @@
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(34, 40, 49, 0.4); /* Semi-transparent dark background */
+  backdrop-filter: blur(20px); /* Acrylic blur effect */
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Glass border */
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  max-width: 1000px; /* Stretched out width */
+  width: 90%; /* Responsive width */
+  margin: 0 auto;
+  color: white;
+  min-height: 400px;
+}
+
+.weather-current-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Left Side - Gradient Card */
+.weather-left {
+  flex: 1;
+  /* background: linear-gradient(135deg, rgba(114, 237, 242, 0.5) 10%, rgba(81, 81, 229, 0.5) 100%);  Removed static gradient */
+  padding: 25px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+  overflow: hidden; /* Ensure animation stays inside */
+  border-radius: 25px 0 0 0; /* Match card radius */
+}
+
+/* Ensure content is above animation */
+.date-info, .weather-main-info {
+  position: relative;
+  z-index: 1;
+}
+
+.date-info {
+  text-align: left;
+}
+
+.day-name {
+  font-size: 28px; /* Slightly smaller */
+  font-weight: bold;
+  margin: 0;
+}
+
+.full-date {
+  font-size: 14px;
+  opacity: 0.8;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.location-info {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.weather-main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.weather-icon-large {
+  width: 80px; /* Smaller icon */
+  height: 80px;
+  margin-left: -15px;
+}
+
+.temperature-large {
+  font-size: 56px; /* Smaller temp */
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+}
+
+.weather-desc {
+  font-size: 20px; /* Smaller desc */
+  font-weight: 500;
+  margin: 5px 0 0 0;
+  text-transform: capitalize;
+}
+
+/* Right Side - Details */
+.weather-right {
+  flex: 1.2;
+  background-color: transparent; /* Transparent to show acrylic card background */
+  padding: 25px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduced gap */
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b0b0b0;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .weather-current-row {
+    flex-direction: column;
+  }
+
+  .weather-card {
+    max-width: 400px;
+  }
+
+  .weather-left, .weather-right {
+    padding: 30px;
+  }
+  
+  .weather-left {
+    border-radius: 25px 25px 0 0;
+  }
+}
+
