@@ -50,5 +50,5 @@ This is a simple, user-friendly React application that displays current weather 
 ## Screenshots
 ![alt text](image.png)
 
-## Original Create React App README below:
+
 
