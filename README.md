@@ -48,7 +48,7 @@ This is a simple, user-friendly React application that displays current weather 
 *   Error handling is implemented for invalid city names or network issues.
 
 ## Screenshots
-*(Add screenshots of your running application here)*
+![alt text](image.png)
 
 ## Original Create React App README below:
 
