@@ -26,10 +26,10 @@ const WeatherApp = () => {
     setError(null);
     try {
       const weatherResponse = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
       );
       const forecastResponse = await axios.get(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`
       );
       
       setWeatherData(weatherResponse.data);

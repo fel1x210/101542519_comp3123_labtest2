@@ -7,7 +7,7 @@ const WeatherDisplay = ({ weather, forecast }) => {
   if (!weather) return null;
 
   const { name, main, weather: weatherDetails, wind, sys } = weather;
-  const iconUrl = `http://openweathermap.org/img/wn/${weatherDetails[0].icon}@4x.png`; // Larger icon
+  const iconUrl = `https://openweathermap.org/img/wn/${weatherDetails[0].icon}@4x.png`; // Larger icon
 
   // Date formatting
   const date = new Date();
